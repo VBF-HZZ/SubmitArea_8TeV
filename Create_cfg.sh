@@ -138,7 +138,6 @@ echo "
 )
 
 process.source = cms.Source(\"PoolSource\",fileNames = myfilelist,
-                             duplicateCheckMode = cms.untracked.string('noDuplicateCheck'),
                             )
 
 process.TFileService = cms.Service(\"TFileService\",
