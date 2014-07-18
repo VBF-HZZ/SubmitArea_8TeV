@@ -10,7 +10,7 @@
 ##Job Configuration                                         
                                                                                                                      
 ##Job Resources                                                     
-#PBS -l walltime=03:00:00 
+#PBS -l walltime=20:00:00 
 #PBS -l nodes=1:ppn=1                                                  
 #PBS -l pmem=8gb 
 
