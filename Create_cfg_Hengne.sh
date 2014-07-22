@@ -32,17 +32,17 @@ do
   
   txtFile=`basename $file .txt`
   
-  mH=`../bin/getHiggsMass.exe ${txtFile} `
+  mH=`../getXSec.exe ${txtFile} higgsMass ../CrossSectionList.txt`
   if [ "$mH" == "0" ]; then
       isSignal="False"
   else
       isSignal="True"
   fi
   
-  CrossSect=`../bin/getCrossSection.exe ${txtFile} `
-  FilterEff=`../bin/getFilterEff.exe ${txtFile} `
-  nEvents=`../bin/getNEvents.exe ${txtFile} `
-  
+  CrossSect=`../getXSec.exe ${txtFile} crossSection ../CrossSectionList.txt`
+  FilterEff=`../getXSec.exe ${txtFile} filterEff ../CrossSectionList.txt`
+  nEvents=`../getXSec.exe ${txtFile} nEvents ../CrossSectionList.txt` 
+ 
   workDir=../Submission_${INPUTDIR}
   cfgSRC2=../${cfgSRC}
   
@@ -119,7 +119,7 @@ process.source = cms.Source(\"PoolSource\",fileNames = myfilelist,
                             )
 
 process.TFileService = cms.Service(\"TFileService\",
-                                   fileName = cms.string(\""${txtFile}_${IJOB}".root\")
+                                   fileName = cms.string(\""${txtFile}_$(( IJOB - 1 ))".root\")
                                    )
 
 process.reCorrectedPatJets = cms.EDProducer(\"PatJetReCorrector\",
