@@ -10,7 +10,7 @@ do
  str1=${file1%_*\'}
  str1=${str1/\'file:/}
  str1=`basename $str1`
- str1b=${str1%_*}
+ str1b=${str1%_*}_
 
  nfiles=`grep $str1b $FILE | wc -l`
 
