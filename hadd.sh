@@ -11,6 +11,7 @@ hadd ${OUTDIR}/ZZto4tau.root ${INDIR}/ZZTo4tau*.root
 hadd ${OUTDIR}/ggZZ_2e2mu.root ${INDIR}/GluGluToZZTo2L2L*.root
 hadd ${OUTDIR}/ggZZ_4l.root ${INDIR}/GluGluToZZTo4L*.root
 hadd ${OUTDIR}/mH_126_VBF.root ${INDIR}/VBF_HToZZTo4L_M-126_*root
-hadd ${OUTDIR}/mH_126_ggH.root ${INDIR}/GluGluToHToZZTo4L_M-126_*root
+hadd ${OUTDIR}/mH_126_ggH.root ${INDIR}/GluGluToHToZZTo4L_M-126_8TeV-powheg-*.root
+hadd ${OUTDIR}/mH_126_ggH_powheg15.root ${INDIR}/GluGluToHToZZTo4L_M-126_8TeV-powheg15-*.root
 hadd ${OUTDIR}/mH_350_VBF.root ${INDIR}/VBF_HToZZTo4L_M-350_*root
 hadd ${OUTDIR}/mH_350_ggH.root ${INDIR}/GluGluToHToZZTo4L_M-350_*root
