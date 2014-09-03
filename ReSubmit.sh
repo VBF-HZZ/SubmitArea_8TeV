@@ -9,12 +9,6 @@ if [ "$sublist" == "" ]; then
 fi
 
 
-if [ -d $outDir ]; then
-    echo "results directory exists!"
-else
-    mkdir $outDir
-fi
-
 if [[ ! -d outFiles ]]; then mkdir outFiles; fi;
 if [[ ! -d errFiles ]]; then mkdir errFiles; fi;
 
@@ -35,6 +29,6 @@ for f in $(cat ${sublist})
 
   echo ${NAME}
   
-   qsub -v curDir=${curDir},submitDir=${submitDir},cfgFile=${f2},outDir=${outDir} -N "$NAME" submitFile.pbs.sh
+   qsub -v jobName=${NAME},curDir=${curDir},submitDir=${submitDir},cfgFile=${f2},outDir=${outDir} -N "$NAME" submitFile.pbs.sh
   
 done

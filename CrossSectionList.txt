@@ -1,3 +1,9 @@
+ZZTo2e2mu_8TeV_ext-powheg-pythia6_8TeV                                                0.1767        1.0      200    0     
+ZZTo2e2tau_8TeV_ext-powheg-pythia6_8TeV                                               0.1767        1.0      200    0 
+ZZTo2mu2tau_8TeV_ext-powheg-pythia6_8TeV                                              0.1767        1.0      200    0 
+ZZTo4e_8TeV_ext-powheg-pythia6_8TeV                                                   0.07691       1.0      200     0
+ZZTo4mu_8TeV_ext-powheg-pythia6_8TeV                                                  0.07691       1.0      200     0
+ZZTo4tau_8TeV_ext-powheg-pythia6_8TeV                                                 0.07691       1.0      200     0
 DYJetsToLL_TuneZ2_M-50_7TeV-madgraph-tauola_7TeV                                      3048       1.0    0     40000000
 DYJetsToLL_M-10To50_TuneZ2_7TeV-madgraph_7TeV                                         9611       1.0    0      1000000
 DY1JetToLL_M-10To50_TuneZ2_7TeV-madgraph_7TeV                                         755.1      1.0    0      10000
@@ -299,8 +305,8 @@ SMHiggsToZZTo4L_M-130_8TeV-jhu-pythia6_8TeV                                   1.
 SMHiggsToZZTo4L_M-140_8TeV-jhu-pythia6_8TeV                                   1.0                   1.0       0      0
 SMHiggsToZZTo4L_M-250_8TeV-jhu-pythia6_8TeV                                   1.0                   1.0       0      0
 SMHiggsToZZTo4L_M-500_8TeV-jhu-pythia6_8TeV                                   1.0                   1.0       0      0 
-GluGluToZZTo2L2L_TuneZ2star_8TeV-gg2zz-pythia6_8TeV                           0.1203                1.0       0      0
-GluGluToZZTo4L_8TeV-gg2zz-pythia6_8TeV                                        0.048                 1.0       0      0
+GluGluToZZTo2L2L_TuneZ2star_8TeV-gg2zz-pythia6_8TeV                           0.01203                1.0       0      0
+GluGluToZZTo4L_8TeV-gg2zz-pythia6_8TeV                                        0.0048                 1.0       0      0
 WGToLNuG_TuneZ2star_8TeV-madgraph-tauola_8TeV                                 461.6                 1.0       0      0
 WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball_8TeV                              30400.0               1.0       0      0
 WWJetsTo2L2Nu_TuneZ2star_8TeV-madgraph-tauola_8TeV                            4.7                   1.0       0      0
