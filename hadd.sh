@@ -1,10 +1,27 @@
 #!/bin/sh
 
+#INDIR=results_HZZSamples_ExtendLegacy
 INDIR=results_HZZSamples_Sept
 #INDIR=results_HZZSamples_RMDUP
 OUTDIR=rootFiles
-hadd ${OUTDIR}/mH_125_WH.root ${INDIR}/WH_HToZZTo4L_M-125_8TeV*
+
+## Ext
+#hadd ${OUTDIR}/ZZTo2e2mu_8TeV_ext.root ${INDIR}/ZZTo2e2mu_8TeV_ext*root
+#hadd ${OUTDIR}/ZZTo2e2tau_8TeV_ext.root ${INDIR}/ZZTo2e2tau_8TeV_ext*root
+#hadd ${OUTDIR}/ZZTo2mu2tau_8TeV_ext.root ${INDIR}/ZZTo2mu2tau_8TeV_ext*root
+#hadd ${OUTDIR}/ZZTo4e_8TeV_ext.root ${INDIR}/ZZTo4e_8TeV_ext*root
+#hadd ${OUTDIR}/ZZTo4mu_8TeV_ext.root ${INDIR}/ZZTo4mu_8TeV_ext*root
+#hadd ${OUTDIR}/ZZTo4tau_8TeV_ext.root ${INDIR}/ZZTo4tau_8TeV_ext*root
+
+## Sept
+#hadd ${OUTDIR}/mH_125_WH.root ${INDIR}/WH_HToZZTo4L_M-125_8TeV*
 hadd ${OUTDIR}/mH_126_WH.root ${INDIR}/WH_HToZZTo4L_M-126_8TeV*
+#hadd ${OUTDIR}/mH_125_ZH.root ${INDIR}/ZH_HToZZTo4L_M-125_8TeV*
+#hadd ${OUTDIR}/mH_126_ZH.root ${INDIR}/ZH_HToZZTo4L_M-126_8TeV*
+#hadd ${OUTDIR}/mH_125_TTH.root ${INDIR}/TTbarH_HToZZTo4L_M-125_8TeV*
+#hadd ${OUTDIR}/mH_126_TTH.root ${INDIR}/TTbarH_HToZZTo4L_M-126_8TeV*
+
+##RMDUP
 #hadd ${OUTDIR}/mH_126_SMH.root ${INDIR}/SMHiggsToZZTo4L_M-126_8TeV-powheg15*.root
 #hadd ${OUTDIR}/ZZJetsTo4L.root ${INDIR}/ZZJetsTo4L_TuneZ2star*.root
 #hadd ${OUTDIR}/ZZ_2e2mu.root ${INDIR}/ZZTo2e2mu*.root 
